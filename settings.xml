@@ -138,6 +138,12 @@ under the License.
       <passphrase>optional; leave empty if not used.</passphrase>
     </server>
     -->
+
+    <server>
+      <id>github</id>
+      <username>matthewsoame</username>
+      <password>github.token</password>
+    </server>
   </servers>
 
   <!-- mirrors
@@ -267,6 +273,18 @@ under the License.
       </properties>
     </profile>
     -->
+    <profile>
+      <id>github</id>
+      <repositories>
+        <repository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/matthewsoame/TokenProxy</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
   </profiles>
 
   <!-- activeProfiles
@@ -277,4 +295,7 @@ under the License.
     <activeProfile>anotherAlwaysActiveProfile</activeProfile>
   </activeProfiles>
   -->
+  <activeProfiles>
+    <activeProfile>github</activeProfile>
+  </activeProfiles>
 </settings>
