@@ -26,3 +26,5 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Install with Maven
       run: mvn clean install
+    - name: Deploy with Maven
+      run: mvn deploy
