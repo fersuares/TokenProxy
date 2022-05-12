@@ -38,6 +38,9 @@ public class ObjectFactory {
     public SafeInfoType createSafeInfoType() {
         return new SafeInfoType();
     }
+    
+        public ObjectFactory() {
+    }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SafeInfoType }{@code >}
