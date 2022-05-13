@@ -38,6 +38,10 @@ public class ObjectFactory {
     public SafeInfoType createSafeInfoType() {
         return new SafeInfoType();
     }
+    
+    
+        public ObjectFactory() {
+    }
    
 
     /**
